@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Bayanos Music</title>
+</head>
+
+<body>
+
+    <section>
+        <div>
+            <nav class="navbar px-4" style="background-color: #551F6A;">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/logo.jpg" class="logo-custom me-2">
+
+                  </a>
+                  
+                <form class="search-bar mx-auto w-50">
+                    <i class="bi bi-search"></i>
+                    <input type="search" placeholder="O que você quer ouvir?">
+                  </form>
+                  
+
+                <div>
+                    <a href="#" class="nav-link d-inline me-3" style="color: #FF00BF;">Ínicio</a>
+                    <a href="#" class="nav-link d-inline me-3" style="color: #FF00BF;">Inscrever-se</a>
+                    <a href="#" class="btn" style="background-color: #2C0148; color: #FF00BF;">Entrar</a>
+
+                </div>
+
+            </nav>
+        </div>
+    </section>
+
+    <section class="topoDoSite text-center text-light py-5">
+        <h1 class="fw-bold" style="display: inline-block; padding: 5px; font-size: 3rem;"><strong>ONDE OS ESTILOS SE
+                ENCONTRAM</strong></h1>
+        <div class="container mt-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <img src="img/imgTopo.jpg" class="img-fluid" style="border: 2px solid #2C0148;  height: 800px;">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4" style="display: inline-block; padding: 5px;"><strong>MÚSICAS EM DESTAQUE</strong>
+                    </h2>
+                    <div class="row g-5 justify-content-center">
+                        <div class="col-6 d-flex flex-column align-items-center">
+                            <div class="card" style="border: 2px solid #2C0148; width: 300px;">
+                                <img src="img/imgTopo1.jpg" class="card-img-top shadow music-card" data-audio="audio1" style="height: 300px; object-fit: cover;">
+                                <img src="img/ondas.gif" class="gif-ondas" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; width: 100px; pointer-events: none;">
+                                <div class="card-body p-2" style="background-color: rgba(255, 183, 248, 1); border-top: 2px solid #2C0148; text-align: center; border-radius: 0 0 5px 5px;">
+                                    <p class="mb-0" style="color: #FF00BF;"><strong>Taktiikkaa ja Taistelua</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex flex-column align-items-center">
+                            <div class="card" style="border: 2px solid #2C0148; width: 300px;">
+                                <img src="img/imgTopo2.jpg" class="card-img-top shadow music-card" data-audio="audio2" style="height: 300px; object-fit: cover;">
+                                <img src="img/ondas.gif" class="gif-ondas" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; width: 100px; pointer-events: none;">
+                                <div class="card-body p-2" style="background-color: rgba(255, 183, 248, 1); border-top: 2px solid #2C0148; text-align: center; border-radius: 0 0 5px 5px;">
+                                    <p class="mb-0" style="color: #FF00BF;">Natsukashii Melody</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex flex-column align-items-center">
+                            <div class="card" style="border: 2px solid #2C0148; width: 300px;">
+                                <img src="img/imgTopo3.jpg" class="card-img-top shadow music-card" data-audio="audio3" style="height: 300px; object-fit: cover;">
+                                <img src="img/ondas.gif" class="gif-ondas" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; width: 100px; pointer-events: none;">
+                                <div class="card-body p-2" style="background-color: rgba(255, 183, 248, 1); border-top: 2px solid #2C0148; text-align: center; border-radius: 0 0 5px 5px;">
+                                    <p class="mb-0" style="color: #FF00BF;">City Breeze</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex flex-column align-items-center">
+                            <div class="card" style="border: 2px solid #2C0148; width: 300px;">
+                                <img src="img/imgTopo4.jpg" class="card-img-top shadow music-card" data-audio="audio4" style="height: 300px; object-fit: cover;">
+                                <img src="img/ondas.gif" class="gif-ondas" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; width: 100px; pointer-events: none;">
+                                <div class="card-body p-2" style="background-color: rgba(255, 183, 248, 1); border-top: 2px solid #2C0148; text-align: center; border-radius: 0 0 5px 5px;">
+                                    <p class="mb-0" style="color: #FF00BF;">Shadows Rising</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <audio id="audio1" src="musicas/taktiikkaa_ja_taistelua.mp3.mp3"></audio>
+<audio id="audio2" src="musicas/NatsukashiiMelody.mp3"></audio>
+<audio id="audio3" src="musicas/CityBreeze.mp3"></audio>
+<audio id="audio4" src="musicas/ShadowsRising.mp3"></audio>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 text-center text-light meioDoSite">
+        <h1 class="fw-bold mb-5" style="display: inline-block; padding: 5px; font-size: 3rem;">
+            <strong>HITS DA VEZ</strong>
+        </h1>
+
+        <div class="container">
+            <div class="row g-4 row-gap1">
+                <div class="col-6 col-md-3 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom">
+                        <img src="img/hitsDaVez/electronic dance music (EDM).jpg" class="card-img-top img-custom">
+                        <div class="card-body card-body-custom">
+                            <p class="mb-0"><strong>Electronic Dance</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom">
+                        <img src="img/hitsDaVez/eltronica.jpg" class="card-img-top img-custom">
+                        <div class="card-body card-body-custom">
+                            <p class="mb-0"><strong>Eletrônica</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom">
+                        <img src="img/hitsDaVez/hiphop.jpg" class="card-img-top img-custom">
+                        <div class="card-body card-body-custom">
+                            <p class="mb-0"><strong>Hip Hop</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom">
+                        <img src="img/hitsDaVez/Kayōkyoku.jpg" class="card-img-top img-custom">
+                        <div class="card-body card-body-custom">
+                            <p class="mb-0"><strong>Kayōkyoku</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom">
+                        <img src="img/hitsDaVez/kpop2.jpg" class="card-img-top img-custom">
+                        <div class="card-body card-body-custom">
+                            <p class="mb-0"><strong>K-pop</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom">
+                        <img src="img/hitsDaVez/madona.jpg" class="card-img-top img-custom">
+                        <div class="card-body card-body-custom">
+                            <p class="mb-0"><strong>Pop (Madonna)</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 row-gap2">
+                <div class="col-6 col-md-3 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom">
+                        <img src="img/hitsDaVez/rap 2.jpg" class="card-img-top img-custom">
+                        <div class="card-body card-body-custom">
+                            <p class="mb-0"><strong>Rap</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom">
+                        <img src="img/hitsDaVez/regue.jpg" class="card-img-top img-custom">
+                        <div class="card-body card-body-custom">
+                            <p class="mb-0"><strong>Reggae</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom">
+                        <img src="img/hitsDaVez/rock.jpg" class="card-img-top img-custom">
+                        <div class="card-body card-body-custom">
+                            <p class="mb-0"><strong>Rock</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom">
+                        <img src="img/hitsDaVez/romantico br 2.jpg" class="card-img-top img-custom">
+                        <div class="card-body card-body-custom">
+                            <p class="mb-0"><strong>Romântico BR</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom">
+                        <img src="img/hitsDaVez/sertanejo 2.jpg" class="card-img-top img-custom">
+                        <div class="card-body card-body-custom">
+                            <p class="mb-0"><strong>Sertanejo</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom">
+                        <img src="img/hitsDaVez/trap.jpg" class="card-img-top img-custom">
+                        <div class="card-body card-body-custom">
+                            <p class="mb-0"><strong>Trap</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 text-center text-light fundoDoSite">
+        <h1 class="fw-bold mb-5" style="display: inline-block; padding: 5px; font-size: 3rem;">
+            <strong>MÚSICAS DO MOMENTO</strong>
+        </h1>
+        <div class="container">
+            <div class="row g-4 row-gap3">
+                <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom1">
+                        <img src="img/musicas/amor de longe.jpeg" class="card-img-top img-custom" data-audio="audio5">
+                        <img src="img/ondas.gif" class="gif-ondas" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; width: 100px; pointer-events: none;">
+                        <div class="card-body card-body-custom1">
+                            <p class="mb-0"><strong>Amor de Longe</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom1">
+                        <img src="img/musicas/furia do norte.jpeg" class="card-img-top img-custom" data-audio="audio6">
+                        <img src="img/ondas.gif" class="gif-ondas" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; width: 100px; pointer-events: none;">
+                        <div class="card-body card-body-custom1">
+                            <p class="mb-0"><strong>Fúria do Norte</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom1">
+                        <img src="img/musicas/por do sol.jpeg" class="card-img-top img-custom" data-audio="audio7">
+                        <img src="img/ondas.gif" class="gif-ondas" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; width: 100px; pointer-events: none;">
+                        <div class="card-body card-body-custom1">
+                            <p class="mb-0"><strong>Pôr do Sol</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom1">
+                        <img src="img/musicas/RELOGIOS PARTIDOS.jpeg" class="card-img-top img-custom" data-audio="audio8">
+                        <img src="img/ondas.gif" class="gif-ondas" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; width: 100px; pointer-events: none;">
+                        <div class="card-body card-body-custom1">
+                            <p class="mb-0"><strong>Relógios Partidos</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom1">
+                        <img src="img/musicas/SOMBRA NA FAVELA.jpeg" class="card-img-top img-custom" data-audio="audio9">
+                        <img src="img/ondas.gif" class="gif-ondas" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; width: 100px; pointer-events: none;">
+                        <div class="card-body card-body-custom1">
+                            <p class="mb-0"><strong>Sombra na Favela</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+                    <div class="card card-custom1">
+                        <img src="img/musicas/STRIKE DO AMANHÃ.jpeg" class="card-img-top img-custom" data-audio="audio10">
+                        <img src="img/ondas.gif" class="gif-ondas" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; width: 100px; pointer-events: none;">
+                        <div class="card-body card-body-custom1">
+                            <p class="mb-0"><strong>Strike do Amanhã</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <audio id="audio5" src="musicas/AmordeLonge.mp3"></audio>
+<audio id="audio6" src="musicas/FuriadoNorte.mp3"></audio>
+<audio id="audio7" src="musicas/PordoSol.mp3"></audio>
+<audio id="audio8" src="musicas/RelogiosPartidos.mp3"></audio>
+<audio id="audio9" src="musicas/SombranaFavela.mp3"></audio>
+<audio id="audio10" src="musicas/StrikedoAmanhã.mp3"></audio>
+        </div>
+
+        <section>
+            <h1 class="fw-bold mb-5 " style="display: inline-block; padding: 5px; font-size: 3rem;">
+                <strong>ARTISTAS DO MOMENTO</strong>
+            </h1>
+            <div class="container artistas">
+                <div class="row g-4">
+                    <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+                        <div class="card card-custom2">
+                            <img src="img/artistas/Axen Pulse.jpg" class="card-img-top img-custom">
+                            <div class="card-body card-body-custom2">
+                                <p class="mb-0 card-title"><strong>Axen Pulse</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+                        <div class="card card-custom2">
+                            <img src="img/artistas/Lior Veyra.jpg" class="card-img-top img-custom">
+                            <div class="card-body card-body-custom2">
+                                <p class="mb-0 card-title"><strong>Lior Veyra</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+                        <div class="card card-custom2">
+                            <img src="img/artistas/Jay Kronik.jpg" class="card-img-top img-custom">
+                            <div class="card-body card-body-custom2">
+                                <p class="mb-0 card-title"><strong>Jay Kronik</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+                        <div class="card card-custom2">
+                            <img src="img/artistas/Hana Lee.jpg" class="card-img-top img-custom">
+                            <div class="card-body card-body-custom2">
+                                <p class="mb-0 card-title"><strong>Hana Lee</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+                        <div class="card card-custom2">
+                            <img src="img/artistas/Trey Savage.jpg" class="card-img-top img-custom">
+                            <div class="card-body card-body-custom2">
+                                <p class="mb-0 card-title"><strong>Trey Savage</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 d-flex flex-column align-items-center">
+                        <div class="card card-custom2">
+                            <img src="img/artistas/Damien Crowe.jpg" class="card-img-top img-custom">
+                            <div class="card-body card-body-custom2">
+                                <p class="mb-0 card-title"><strong>Damien Crowe</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+    </section>
+    
+
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="caro.js"></script>
+    <script>
+        const cards = document.querySelectorAll('.music-card');
+        let currentAudio = null;
+        let currentCard = null;
+        
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                const audioId = card.getAttribute('data-audio');
+                const audio = document.getElementById(audioId);
+                const gif = card.parentElement.querySelector('.gif-ondas');
+        
+                // Se clicou no mesmo card que já está tocando
+                if (currentAudio === audio) {
+                    audio.pause();
+                    gif.style.display = 'none'; // GIF some ao pausar
+                    card.style.filter = 'brightness(100%)'; // remove efeito
+                    currentAudio = null;
+                    currentCard = null;
+                    return;
+                }
+        
+                // Para o áudio anterior
+                if (currentAudio) {
+                    currentAudio.pause();
+                    if (currentCard) {
+                        let oldGif = currentCard.parentElement.querySelector('.gif-ondas');
+                        oldGif.style.display = 'none'; // GIF do card anterior desaparece
+                        currentCard.style.filter = 'brightness(100%)'; // remove efeito do card anterior
+                    }
+                }
+        
+                // Toca o novo áudio
+                audio.play();
+                gif.style.display = 'block'; // GIF aparece enquanto música toca
+                card.style.filter = 'brightness(70%)'; // efeito visual de música tocando
+        
+                currentAudio = audio;
+                currentCard = card;
+        
+                // Quando a música terminar naturalmente, remove o GIF e efeito
+                audio.onended = () => {
+                    gif.style.display = 'none';
+                    card.style.filter = 'brightness(100%)';
+                    currentAudio = null;
+                    currentCard = null;
+                };
+            });
+        });
+        </script>
+        
+        
+
+</body>
+
+</html>
